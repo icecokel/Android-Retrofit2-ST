@@ -25,23 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.e("start","2");
-//        Call<JsonArray> call = retrofitClient.apiService.getretrofitdata();
-//        Log.e("start","3");
-//        call.enqueue(new Callback<JsonArray>() {
-//            @Override
-//            public void onResponse(Call<JsonArray> call, Response<JsonArray> response) {
-//                Log.e("start","4");
-//                Log.e("start",response.toString());
-//                if (response.isSuccessful()) {
-//                    Log.e("start","5");
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<JsonArray> call, Throwable t) {
-//                Log.e("***Error****",t.toString());
-//            }
-//        });
 
         Call<JsonObject> call = retrofitClient.apiService.getList();
 
@@ -64,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("***Error****",t.toString());
             }
         });
-
     }
 
 }
