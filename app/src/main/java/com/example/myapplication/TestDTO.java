@@ -1,31 +1,18 @@
 package com.example.myapplication;
 
 
-public class TestDTO{
-    String keyData;
-    int valueData;
+import androidx.annotation.NonNull;
 
-    public void setValueData(int valueData) {
-        this.valueData = valueData;
+public class TestDTO {
+    int data;
+
+    public void setData(int data) {
+        this.data = data;
     }
 
-    public void setKeyData(String keyData) {
-        this.keyData = keyData;
-    }
-
-    public int getValueData() {
-        return valueData;
-    }
-
-    public String getKeyData() {
-        return keyData;
-    }
-
+    @NonNull
     @Override
     public String toString() {
-        return "TestDTO{" +
-                "keyData='" + keyData + '\'' +
-                ", valueData=" + valueData +
-                '}';
+        return super.toString();
     }
 }

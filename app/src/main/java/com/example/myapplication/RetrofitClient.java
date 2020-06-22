@@ -11,7 +11,7 @@ public class RetrofitClient {
     //객체생성
     Retrofit retrofit = new Retrofit.Builder()
             //서버 url설정
-            .baseUrl(baseUrl)
+            .baseUrl(localTestUrl)
             //데이터 파싱 설정
             .addConverterFactory(GsonConverterFactory.create())
             //객체정보 반환

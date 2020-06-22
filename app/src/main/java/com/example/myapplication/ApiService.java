@@ -9,8 +9,8 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiService {
-    @GET("test")
-    Call<JsonArray> localTest();
+    @GET("get/test")
+    Call<JsonObject> localTest();
 
     @GET("menu/list")
     Call<JsonArray> getretrofitdata();
@@ -22,7 +22,7 @@ public interface ApiService {
     @GET("users/2")
     Call<JsonObject> getObj();
 
-    @POST("test")
+    @POST("post/test")
     Call<JsonObject> addNum(@Body TestDTO testDTO);
 
 }
