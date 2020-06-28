@@ -4,6 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
+
     private String localTestUrl = "http://192.168.0.7:8081/rest/";
     private String baseUrl ="http://ec2-15-165-205-186.ap-northeast-2.compute.amazonaws.com:8080/DBSG/";
     private String testUrl ="https://reqres.in/api/";

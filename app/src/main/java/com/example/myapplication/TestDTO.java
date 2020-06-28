@@ -3,6 +3,9 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 
+
+// POST 시, 데이터를 보낼 DTO
+
 public class TestDTO {
     int data;
 

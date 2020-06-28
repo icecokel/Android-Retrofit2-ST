@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e("start","1");
 
         Button btnG = (Button) findViewById(R.id.btnGet);
-
+        // GET 요청
         btnG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnP = (Button) findViewById(R.id.btnPost);
-
+        // POST 요청
         btnP.setOnClickListener(new View.OnClickListener() {
-            @Override
+                @Override
             public void onClick(View v) {
                 TestDTO testDTO = new TestDTO();
 

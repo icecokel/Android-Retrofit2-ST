@@ -21,7 +21,7 @@ public interface ApiService {
 
     @GET("users/2")
     Call<JsonObject> getObj();
-
+ // POST
     @POST("post/test")
     Call<JsonObject> addNum(@Body TestDTO testDTO);
 
